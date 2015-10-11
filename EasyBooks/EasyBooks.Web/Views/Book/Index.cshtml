@@ -1,0 +1,36 @@
+﻿@model IList<EasyBooks.Domain.Book>
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading" style="font-size:large">
+        Book List 
+    </div>
+
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Publication</td>
+                    <td>Price</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(book.Title, "Edit", new { id = book.ID })</td>
+                    <td>@book.Author</td>
+                    <td>@String.Format("{0:dd/MM/yyyy}", book.PublicationDate)</td>
+                    <td>@String.Format("{0:c}", book.Price)</td>
+                    <td>@Html.ActionLink("Delete", "Delete", new { id = book.ID }, htmlAttributes: new { @onclick = "return confirm('Are you sure you want to delete?');" })</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@Html.ActionLink("NEW BOOK", "Edit", new { id = 0 })

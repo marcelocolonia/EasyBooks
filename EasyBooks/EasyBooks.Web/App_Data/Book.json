@@ -1,0 +1,29 @@
+[
+  {
+    "Author": "JRR Tolkien",
+    "Title": "The Hobbit",
+    "Genre": 0,
+    "Price": 32.0,
+    "PublicationDate": "2015-10-21T00:00:00",
+    "Description": "a book about hobbits and dwarves.",
+    "ID": -8587578904858058351
+  },
+  {
+    "Author": "Robert Howard",
+    "Title": "Conan the Conqueror",
+    "Genre": 0,
+    "Price": 19.99,
+    "PublicationDate": "2015-10-13T00:00:00",
+    "Description": "a book about a savage cimerian.",
+    "ID": -8587578904171044619
+  },
+  {
+    "Author": "Arthur C Clarke",
+    "Title": "The City and the Stars",
+    "Genre": 0,
+    "Price": 7.98,
+    "PublicationDate": "2015-10-01T00:00:00",
+    "Description": "a book about a utopian futuristic city.",
+    "ID": -8587578901670780283
+  }
+]
